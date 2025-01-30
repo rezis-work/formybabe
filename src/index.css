@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+.hearts-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.heart {
+  --c: red;
+  position: absolute; /* Ensures hearts float properly */
+  width: 50px; /* Default size */
+  aspect-ratio: 1;
+  background: radial-gradient(at 70% 31%, var(--c) 29%, #0000 30%),
+    radial-gradient(at 30% 31%, var(--c) 29%, #0000 30%),
+    linear-gradient(var(--c) 0 0) bottom/100% 50% no-repeat;
+  clip-path: polygon(-43% 0, 50% 91%, 143% 0);
+  animation: float 5s infinite ease-in-out;
+}
+
+/* Randomize heart positions, sizes, and delays */
+.heart:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+  width: 30px;
+}
+
+.heart:nth-child(2) {
+  left: 20%;
+  animation-delay: 1s;
+  width: 40px;
+}
+
+.heart:nth-child(3) {
+  left: 40%;
+  animation-delay: 2s;
+  width: 35px;
+}
+
+.heart:nth-child(4) {
+  left: 60%;
+  animation-delay: 3s;
+  width: 45px;
+}
+
+.heart:nth-child(5) {
+  left: 80%;
+  animation-delay: 4s;
+  width: 38px;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% {
+    transform: translateY(100vh) scale(0.5);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) scale(1);
+    opacity: 0;
+  }
+}
