@@ -18,7 +18,7 @@ const Question = ({ setIsYes }) => {
         alt="valentine"
       />
       <h1 className=" text-red-500 text-2xl font-bold text-center">
-        For my Beautiful Fareefat
+        For my Beautiful Fareedat
       </h1>
       <p className=" text-2xl font-bold px-10 text-center text-red-800 max-w-2xl">
         I love you more than words can say. You are the most beautiful person I
