@@ -5,6 +5,8 @@ const Yes = () => {
         <div className="heart"></div>
         <div className="heart"></div>
         <div className="heart"></div>
+        <div className="heart"></div>
+        <div className="heart"></div>
       </div>
       <img
         src="/yes.png"
@@ -13,7 +15,7 @@ const Yes = () => {
       />
       <div className="z-10 mt-[500px] bg-red-500 rounded-2xl p-5">
         <h1 className="text-2xl font-bold text-center text-white">
-          I love you so much my beautiful Fareefat!
+          I love you so much my beautiful Fareedat!
         </h1>
       </div>
     </div>
